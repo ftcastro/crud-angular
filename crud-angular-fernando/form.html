@@ -1,0 +1,22 @@
+<form id="form-coment" ng-submit="salvar()">
+	<fieldset>
+		<div class="form-group" ng-class="{'has-error':erros.nome}">
+			<label for="nomeInput" class="control-label" style="color: white">Nome</label>
+			<input type="text" class="form-control" name="nome" id="nome" ng-model="coment.nome" placeholder="Nome" size="50" maxlength="50" required>
+			<span class="help-block">{{erros.nome}}</span>
+		</div>
+		<div class="form-group" ng-class="{'has-error':erros.nome}">
+			<label for="emailInput" class="control-label" style="color: white">Email</label>
+			<input type="text" class="form-control" name="email" id="email" ng-model="coment.nome" placeholder="Email" size="50" maxlength="50" required>
+			<span class="help-block">{{erros.nome}}</span>
+		</div>
+		<div class="form-group" ng-class="{'has-error':erros.nome}">
+			<label for="telefoneInput" class="control-label" style="color: white">Telefone</label>
+			<input type="text" class="form-control" name="telefone" id="telefone" ng-model="coment.nome" placeholder="Telefone" size="50" maxlength="50" required>
+			<span class="help-block">{{erros.nome}}</span>
+		</div>
+		<input name="button" type="button" id="btnAdd" class="btn btn-success" onclick="add();" class="btn btn-success" value="Enviar comentario" />
+		<img src="img/ajax.gif" ng-show="salvandoFlag">
+	</fieldset>
+</form>>
+	
